@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1> Formulários </h1>
+    <hr>
+    <main>
+     <form>
+        <div>
+            <!-- criar uma caixa em branco para digitar qualquer coisa-->
+            <label for="input aleatorio">Digite:</label>
+            <input type="text" id="input aleatorio">
+        </div>
+        <div>
+            <!-- criar uma caixa com uma sugestão de texto -->
+             <label for="input aleatorio">Digite:</label>
+             <input type="text" id="input aleatorio" placeholder="informe seu nome">
+        </div>
+        <div>
+            <!-- criar uma caixa com um texto ja inicial (pode ser apagado) -->
+            <label for="input aleatorio">Digite:</label>
+            <input type="text" id="input aleatorio" value="Teste">
+        </div>
+        <div>
+            <!-- name -->
+            <label for="texto">Nome:</label>
+            <input type="text" id="texto" name="nome">
+        </div>
+        <div>
+            <!-- criar uma caixa que quando digita, os caracteres são ocultados -->
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha">
+        </div>
+        <div>
+            <!-- parece uma caixa normal, mas semanticamente é bom definir como email para na hora de usar outros recursos como css e javascript ajudar. OBS: se mudar também pra url no type n muda nada mas semanticamente é bom -->
+            <label for="email">digite seu email:</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div>
+            <!-- Define dia mês e ano com um calendário -->
+            <label for="data">data do seu nascimento:</label>
+            <input type="date" id="data" name="data">
+        </div>
+        <div>
+            <!-- Define um horário -->
+            <label for="horario">horário:</label>
+            <input type="time" id="horario" name="horas">
+        </div>
+        <div>
+            <!-- Para digitar apenas número, não vai texto -->
+            <label for="nums">digite um numero:</label>
+            <input type="number" id="nums" name="numero">
+        </div>
+        <div>
+            <!-- Enviar um arquivo -->
+            <label for="doc">input:</label>
+            <input type="file" id="doc" name="documento">
+        </div>
+        <div>
+            <!-- Cria uma caixinha onde você pode escolher uma cor -->
+            <label for="cor">input:</label>
+            <input type="color" id="cor" name="cor">
+        </div>
+        <div>
+            <!-- Cria uma barrinha onde você pode ir aumentando -->
+            <label for="barra">input:</label>
+            <input type="range" id="barra" name="barra" value="100" max="200" min="100">
+        </div>
+        <div>
+            <!-- Caixinha de seleção. checkbox você pode marcar multiplas, mas se mudar o tipo para radio você só pode marcar uma -->
+            <label for="check">input:</label>
+            <input type="checkbox" id="check" name="seleção">
+        </div>
+        <div>
+            <!-- O reset é um botão que você pode resetar todas as respostas, apagando tudo.-->
+            <label for="limpar">input:</label>
+            <input type="reset" id="limpar" name="resetar" value="Limpar">
+        </div>
+            <!-- Caixa de texto maior que você pode escrever. O cols e o rows é o limite do quanto você pode escrever (de colunas e linhas)-->
+             <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+        <div>
+            <!-- vai criar uma caixinha de seleção onde você pode escolher uma opção-->
+            <select name="seleção" id="selection">
+                <option value="" disabled selected>Escolha uma das opções</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+        <div>
+            <!-- você envia o formulário -->
+            <input type="submit" id="submeter" name="enviar" value="submit">
+        </div>
+     </form>
+    </main>
+</body>
+</html>

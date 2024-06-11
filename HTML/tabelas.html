@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+</head>
+<body>
+    <main>
+        <h1> Tabelas em html</h1>
+
+        <section id="students">
+            <h2>Controle de alunos</h2>
+
+            <table border="1">
+                <!-- cabeçalho da tabela -->
+                 <thead>
+                    <!-- criar linha dentro da tabela  -->
+                     <tr>
+                        <!-- th vai criar a célula, só é usado no thead pra ficar com a formatação diferente (negrito e centralizado)-->
+                        <th> Nome </th>
+                        <th> Email </th>
+                        <th> Matrícula</th>
+                     </tr>
+                 </thead>
+
+                <!-- corpo da tabela -->
+                 <tbody>
+                      <tr>
+                        <!-- td vai criar a célula -->
+                         <td>Carol Danvers</td>
+                         <td>carol.danvers@gmail.com</td>
+                         <td>1</td>
+                      </tr>
+                      <tr>
+                        <td>Peter Parker</td>
+                        <td>peter.parker@gmal.com</td>
+                        <td>2</td>
+                      </tr>
+                      <tr>
+                        <td>Tony Stark</td>
+                        <td>tony.stark@gmail.com/td>
+                        <td>3</td>
+                      </tr>
+                 </tbody>
+            </table>
+
+        </section>
+
+        <section id="finances">
+             <h2>Controle financeiro</h2>
+
+             <table border="1">
+                <thead>
+                   <tr>
+                    <th>Data</th>
+                    <th>Tipo</th>
+                    <th>Descrição</th>
+                    <th>Valor</th>
+                   </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                     <td rowspan="2">15/06/2024</td>
+                     <td colspan="2">Despesa</td>
+                     <!-- <td>Almoço</td> -->
+                     <td>R$ 35,00</td>
+                    </tr>
+
+                    <tr>
+                        <!-- <td>15/06/2024</td> -->
+                        <td>Receita</td>
+                        <td>Salário</td>
+                        <td>R$3.768,00</td>
+                    </tr>
+                </tbody>
+             </table>
+
+        </section>
+    </main>
+</body>
+</html>

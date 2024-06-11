@@ -1,0 +1,19 @@
+1- cd (link arq)
+2- git init (iniciar doc git)
+3- git status
+4- git add (nome do arquivo) OU git add .
+5- git commit -m " "
+6- git remote add origin (LINK) OU git remote
+7- git push OU git push origin master
+
+extras:
+
+git restore "(nome arquivo)" ou 
+git restore --staged "(nome arquivo)"
+
+git pull
+
+git fetch
+
+git diff
+git diff --staged
